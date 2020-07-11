@@ -2,6 +2,8 @@
 
 *These codes can be dangerous for your health.*
 
+![GIF](https://media1.tenor.com/images/505ddb5e0b0e8c3e96b66e1469ef47c1/tenor.gif?itemid=4903969)
+
 ## Quick Links
 - [Gmail Link](mailto:vivekascoder@gmail.com)
 - [ProtonMail Link](mailto:pbqre@protonmail.com)
