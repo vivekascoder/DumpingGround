@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="">
+        <input id="play-pause" type="submit" value="Play/Pause">
+    </div>
+    <div class="vol-control">
+        <input id="vol-btn" type="submit" value="Volume +">
+        <input id="vol-btn" type="submit" value="Volume -">
+    </div>
+    <div class="terminal">
+        <input id="terminal-btn" type="submit" value="Open Terminal">
+    </div>
+    <div class="terminal">
+        <input id="arrow-up" type="submit" value="^">
+    </div>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #333;
+            margin: 50px;
+        }
+        #play-pause{
+            padding: 25px;
+            font-size: 2rem;
+            /* margin: 50px; */
+            background-color: orangered;
+            border: none;
+            color: white;
+            width: 100%;
+        }
+        #play-pause:hover{
+            background-color: red;
+        }
+        .vol-control{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* margin: 50px; */
+            margin-top: 20px;
+        }
+        #vol-btn{
+            padding: 25px;
+            font-size: 2rem;
+            color: white;
+            background-color: seagreen;
+            border: none;
+            width: 48%;
+        }
+        #vol-btn:hover{
+            background-color: green;
+        }
+        .terminal{
+            margin-top: 20px;
+        }
+        #terminal-btn{
+            background-color: dodgerblue;
+            color: white;
+            border: none;
+            padding: 25px;
+            font-size: 2rem;
+            width: 100%;
+        }
+        #terminal-btn:hover{
+            background-color: rgb(0, 103, 206);
+        }
+        #arrow-up{
+            background-color: dodgerblue;
+            color: white;
+            border: none;
+            padding: 25px;
+            font-size: 2rem;
+            width: 100%;
+        }
+    </style>
+    <script>
+        const url = "http://192.168.43.188:8000";
+        const playPauseBtn = document.getElementById("play-pause");
+        const volumeUp = document.querySelectorAll("#vol-btn")[0];
+        const volumeDown = document.querySelectorAll("#vol-btn")[1];
+        const openTerminal = document.getElementById("terminal-btn");
+        const arrowUp = document.getElementById("arrow-up");
+
+        function postCommand(command){
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', url, true);
+            xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhr.send(`command=${command}`);
+        }
+        playPauseBtn.onclick = () => {
+            postCommand('play-pause');
+        }
+        openTerminal.onclick = () => {
+            postCommand('open-terminal');
+        }
+        volumeUp.onclick = () => {
+            postCommand('volume-up');
+        }
+        volumeDown.onclick = () => {
+            postCommand('volume-down');
+        }
+        arrowUp.onclick = () => {
+            postCommand('arrow-up');
+        }
+    </script>
+</body>
+</html>
