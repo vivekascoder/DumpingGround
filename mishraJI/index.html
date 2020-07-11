@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./materialize/materialize.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- More Info Dropdown-->
+  <ul id="dropdown-menu" class="dropdown-content">
+    <li><a href="#!"><i class="material-icons">important_devices</i>Courses</a></li>
+    <li><a href="#!"><i class="material-icons">dashboard</i>More Stuff</a></li>
+    <li><a href="#!"><i class="material-icons">contact_mail</i>About Me</a></li>
+  </ul>
+
+  <div class="navbar-fixed">
+    <nav class="teal">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo"><i class="material-icons">face</i>MishraJI</a>
+          <a href="#!" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#!">Home</a></li>
+            <li><a href="#!">Material</a></li>
+
+            <!-- Dropdown Trigger -->
+            <li><a href="" class="dropdown-trigger" data-target="dropdown-menu"><i
+                  class="material-icons right">arrow_drop_down</i>More Info</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <ul class="sidenav" id="mobile-menu">
+    <li>
+      <div class="user-view">
+        <div class="background">
+          <img src="img/back-sidenav.jpg">
+        </div>
+        <a href="#!"><img src="img/user.jpg" alt="" class="circle"></a>
+        <a href="#!"><span class="white-text name">John Doe</span></a>
+        <a href="#!"><span class="white-text email">johndoe@gmail.com</span></a>
+      </div>
+    </li>
+    <li><a href="#!"><i class="material-icons">account_balance</i>Home</a></li>
+    <li><a href="#!"><i class="material-icons">attach_file</i>Material</a></li>
+    <li><a href="#!"><i class="material-icons">important_devices</i>Courses</a></li>
+    <li><a href="#!"><i class="material-icons">dashboard</i>More Stuff</a></li>
+    <li><a href="#!"><i class="material-icons">contact_mail</i>About Me</a></li>
+    <li><div class="divider"></div></li>
+  </ul>
+
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img class="parallax" src="img/1.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Want To Master Physics</h3>
+          <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo,
+            minima.</h5>
+            <a href="#!" class="btn waves-effect waves-light btn-large teal darken-2">Master Physics</a>
+        </div>
+      </li>
+      <li>
+        <img class="parallax" src="img/2.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Get 90+ Marks Guaranteed</h3>
+          <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+            quidem?</h5>
+            <a href="#!" class="btn waves-effect waves-light btn-large teal darken-2">Get 90+ Marks</a>
+        </div>
+      </li>
+      <li>
+        <img src="img/3.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Be a Physics Toper</h3>
+          <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+            quidem?</h5>
+            <a href="#!" class="btn waves-effect waves-light btn-large teal darken-2">Become Physics Topper</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Floating Button-->
+  <div class="fixed-action-btn">
+    <a href="#!" class="pulse tooltipped btn-floating btn-large teal darken-2" data-position="left" data-tooltip="More Actions."><i
+        class="material-icons">more_vert</i></a>
+    <ul>
+      <li><a href="#!" class="tooltipped btn-floating teal darken-2" data-position="left"
+          data-tooltip="Check Assignments."><i class="material-icons">assignment</i></a></li>
+      <li><a href="#querymodal" class="tooltipped btn-floating teal darken-2 modal-trigger" data-position="left" data-tooltip="Send Queries"><i
+            class="material-icons">attach_file</i></a></li>
+    </ul>
+  </div>
+
+  <!-- Query Modal -->
+  <div class="modal modal-fixed-footer" id="querymodal">
+    <div class="modal-content">
+      <h2 class="teal-text text-darken-2 hide-on-small-only center">Send Your Queries</h2>
+      <h4 class="teal-text text-darken-2 show-on-small hide-on-med-and-up center">Send Your Queries</h4>
+      <div class="container">
+        <form action="row">
+          <div class="input-field col s12 l6">
+            <i class="material-icons prefix teal-text text-darken-2">account_circle</i>
+            <input type="text" id="name" class="validate">
+            <label for="name">Full Name</label>
+          </div>
+          <div class="input-field col s12 l6">
+            <i class="material-icons prefix teal-text text-darken-2">phone</i>
+            <input type="tel" id="telephone" class="validate">
+            <label for="name">Phone No.</label>
+          </div>
+          <div class="input-field col s12 l6">
+            <i class="material-icons prefix teal-text text-darken-2">email</i>
+            <input type="email" id="email" class="validate">
+            <label for="name">Email</label>
+          </div>
+          <div class="input-field col s12 l6">
+            <i class="material-icons prefix teal-text text-darken-2">mode_edit</i>
+            <textarea id="query" class="materialize-textarea"></textarea>
+            <label for="name">Enter Query</label>
+          </div>
+          
+          <div class="file-field input-field col s12 l6">
+            <div class="btn teal darken-2">
+              <span>File</span>
+              <input type="file">
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" name="file" type="text">
+              <label for="file">Attach Images, Files, etc.</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="" class="modal-close btn teal darken-2 waves-effect waves-light"><i class="material-icons right">send</i>Send Query</a>
+    </div>
+  </div>
+
+  <!-- Email list section-->
+  <section class="teal" id="email" style="padding:1rem;">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l7">
+          <div class="row white-text">
+            <h3 style="margin: 0; margin-top: 1rem;">Let's Conquer Physics</h3>
+          <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.. consectetur adipisicing elit. Quisquam, recusandae! adipisicing elitm delectus, distinctio ut ipsa. Similique, voluptate.</p>
+          </div>
+          <div class="row">
+            <ul class="collection">
+              <li class="collection-item avatar">
+                <img src="img/yuna.jpg" alt="" class="circle">
+                <span class="title"><strong>Anjli Sharma</strong></span>
+                <p>2019 All India Physics topper.</p>
+                <p>Marks: 100/100</p>
+                <a href="#!" class="secondary-content">
+                  <i class="material-icons">grade</i>
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+        <form class="col s12 offset-l1 l4 white" class="">
+          <div class="row">
+            <div class="col s12 white-text teal darken-2">
+              <h5 class="center">Join Newsletter</h5>
+            </div>
+            <div class="input-field col s12">
+              <i class="material-icons prefix teal-text darken-2">account_circle</i>
+              <input id="icon_prefix" type="text" class="validate ">
+              <label for="icon_prefix" class="">Full Name</label>
+            </div>
+            <div class="input-field col s12">
+              <i class="material-icons prefix teal-text darken-2 ">email</i>
+              <input id="icon_telephone" type="email" class="validate">
+              <label for="icon_telephone" class="">Email</label>
+            </div>
+            <a href="#!" id="subscribe" class="btn waves-effect waves-light col teal darken-2 s6">
+              <i class="material-icons right ">send</i>Subscribe
+            </a>
+          </div>
+        </form>
+      </div>
+        
+
+    </div>
+  </section>
+
+  <!--Offers Section-->
+  <br><br><br>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 l6 ">
+        <ul class="collection with-header z-depth-2">
+          <li class="collection-item indigo ">
+            <h5 class="white-text">Services Offered</h5>
+          </li>
+          <li class="collection-item avatar ">
+            <i class="material-icons circle indigo ">account_balance_wallet</i>
+            <span class="title">Account Vault</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, saepe!</p>
+          </li>
+          <li class="collection-item avatar ">
+            <i class="material-icons circle indigo ">archive</i>
+            <span class="title">Previous Record</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, saepe!</p>
+          </li>
+          <li class="collection-item avatar ">
+            <i class="material-icons circle indigo ">add_shopping_cart</i>
+            <span class="title">Shopping Now</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, saepe!</p>
+          </li>
+          <li class="collection-item">
+            <a style="width: 100%;" class="btn btn-large waves-effect waves-light indigo "><i
+                class="material-icons right">send</i>Subscribe Now</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col s12 l6">
+        <ul class="collection with-header z-depth-2">
+          <li class="collection-item purple ">
+            <h5 class="white-text">Services Offered</h5>
+          </li>
+          <li class="collection-item avatar ">
+            <i class="material-icons circle purple">account_balance_wallet</i>
+            <span class="title">Account Vault</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, saepe!</p>
+          </li>
+          <li class="collection-item avatar ">
+            <i class="material-icons circle purple ">archive</i>
+            <span class="title">Previous Record</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, saepe!</p>
+          </li>
+          <li class="collection-item avatar ">
+            <i class="material-icons circle purple">add_shopping_cart</i>
+            <span class="title">Shopping Now</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, saepe!</p>
+          </li>
+          <li class="collection-item">
+            <a style="width: 100%;" class="btn btn-large waves-effect waves-light purple"><i
+                class="material-icons right">send</i>Subscribe Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+
+  
+
+  <!-- Parallax Container -->
+  <div style="height: 500px;" class="parallax-window" data-parallax="scroll" data-image-src="img/back-sidenav.jpg">
+  <div class="container">
+    <div class="row" style="padding-top: 7rem;">
+      <form class="col s8 offset-l1 l4 white offset-l8 offset-s2">
+        <div class="row">
+          <div class="col s12 white-text teal darken-2">
+            <h5 class="center">Login Here</h5>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix teal-text darken-2">account_circle</i>
+            <input id="username" type="text" class="validate ">
+            <label for="username" class="">Username</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix teal-text darken-2 ">https</i>
+            <input id="password" type="password" class="validate">
+            <label for="password" class="">Password</label>
+          </div>
+          <a href="#!" id="subscribe" class="btn waves-effect waves-light col teal darken-2 s6">
+            <i class="material-icons right ">verified_user</i>Login
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+  <br><br>
+  <br><br>
+  <div class="container">
+    <div class="row">
+      <div class="col s10 offset-s1 l5">
+        <div class="card">
+          <div class="card-image" >
+            <img src="/img/close-up-photo-of-man-kissing-woman-3916020.jpg" alt="">
+            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+          </div>
+          <div class="card-content"> 
+            <span class="card-title">John Doe</span>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit aliquid beatae, aspernatur deleniti eveniet facere. Nam quo saepe cumque quibusdam!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <table class="striped">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Name</th>
+              <th>Marks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Anjli Sharma</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Anjli Sharma</td>
+              <td>100</td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>Anjli Sharma</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Anjli Sharma</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Anjli Sharma</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Anjli Sharma</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Anjli Sharma</td>
+              <td>100</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <style>
+  </style>
+
+
+
+
+  <br><br>
+  <footer class="page-footer blue-grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l4 ">
+          <h3>Address</h3>
+          <p style="margin: 0;"><i class="material-icons"
+              style="position: relative; top: 4px; margin: 0; ">account_balance</i> Kapashera, New Delhi</p>
+          <p style="margin: 0;"><i class="material-icons" style="position: relative; top: 4px; margin: 0; ">place</i>
+            House no 818, Near Fun & Food Village</p>
+
+          <p style="margin: 0;"><i class="material-icons" style="position: relative; top: 4px; margin: 0; ">phone</i>
+            +91 9788452556</p>
+          <p style="margin: 0;"><i class="material-icons" style="position: relative; top: 4px; margin: 0; ">mail</i>
+            johndoe@gmail.com</p>
+        </div>
+        <div class="col s12 l6 offset-l1">
+          <br><br>
+          <div class="col">
+            <h1 class="right" style=""><i style="font-size: 3rem;" class="material-icons">whatshot</i>985<span
+                style="font-size: 1.5rem;">Visits</span></h1>
+          </div>
+          <div class="col">
+            <h1 class="right" style=""><i style="font-size: 3rem;" class="material-icons">wc</i>145<span
+                style="font-size: 1.5rem;">Members</span></h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="container">
+          <div class="col s6 l3">
+            <div class="container">
+              <ul>
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>Linked In</li>
+                <li>Email</li>
+                <li>Services</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col s6 l3">
+            <div class="container">
+              <ul>
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>Linked In</li>
+                <li>Email</li>
+                <li>Services</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col s6 l3">
+            <div class="container">
+              <ul>
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>Linked In</li>
+                <li>Email</li>
+                <li>Services</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col s6 l3">
+            <div class="container">
+              <ul>
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>Linked In</li>
+                <li>Email</li>
+                <li>Services</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container">
+        <p class="center"><strong>Made By <a href="https://www.instagram.com/vivekascoder/" class="white-text"><i
+                class="material-icons "
+                style="position: relative; top: 4px;font-size: 1.25rem;">person_pin</i>vivekascoder</a> with <i
+              class="material-icons red-text text-darken-2"
+              style="position: relative; top: 4px;font-size: 1.25rem;">favorite</i> || <i
+              style="position: relative; top: 4px;font-size: 1.25rem;" class="material-icons ">phone</i>
+            9354085897</strong></p>
+
+      </div>
+    </div>
+  </footer>
+  <!-- Javascript CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="./materialize/materialize.js"></script>
+  <script src="./parallax.js-1.5.0/parallax.js"></script></script>
+  <script>
+    $(document).ready(function(){
+      // PARALLAX
+      $('#parallax').parallax();
+    });
+    $(".dropdown-trigger").dropdown({
+      constrainWidth: false,
+      coverTrigger: false
+    });
+    $(".dropdown-trigger-1").dropdown({
+      constrainWidth: true
+    });
+    $(document).ready(() => {
+      $('.slider').slider({
+        interval: 3000,
+        indicators: false,
+      });
+      $('.sidenav').sidenav();
+    });
+    $(document).ready(() => {
+      $('.fixed-action-btn').floatingActionButton();
+      $('.tooltipped').tooltip();
+      $('.modal').modal();
+    });
+    $(document).ready(()=>{
+      $('.collapsible').collapsible();
+    });
+    $('.parallax-window').parallax({imageSrc: 'img/back-sidenav.jpg'});
+  </script>
+</body>
+
+</html>
