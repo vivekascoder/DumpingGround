@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DotDes</title>
+</head>
+<body>
+    <div class="Body" id="first">
+        <div class="nav" style="padding: 1rem;">
+            <!-- <input type="button" value="Jump to next Screen. >>>" id="jump"> -->
+        </div>
+        <h1>Hello World</h1>
+        <hr>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptate rem mollitia tempore, sapiente suscipit consequuntur minus laborum numquam? Nulla ducimus pariatur reprehenderit inventore illum exercitationem libero blanditiis deleniti earum.</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos, delectus aperiam tempore iste tenetur nesciunt velit doloremque animi illum.</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt rem ea incidunt dolorem similique molestias, exercitationem repellat cum ratione at?</p>
+        <br>
+        <p><h3><i>Hellowing:</i></h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis vero, voluptates a tempora, fugit labore iste consectetur eligendi soluta doloremque laborum. Sit nulla itaque exercitationem dolores sed aliquam, totam commodi asperiores error repellat placeat id cum soluta, eaque nesciunt blanditiis.</p>
+        <br><br>
+        <div>
+            <form action="">
+                <fieldset style="padding: 1rem;">
+                    <legend>Login Form</legend>
+                    <label for="name">Username: 
+                        <input type="text">
+                    </label><br><br>
+                    <label for="pass">Password: 
+                        <input type="text">
+                    </label><br><br>
+                    <input type="button" value="Login Now" id="jump">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div class="Body" id="second">
+        <div class="nav" style="padding: 1rem;">
+            <input type="button" value="Jump to previous Screen. >>>" id="jump-prev">
+        </div>
+        <h1>Hello, vivek you're on next screen</h1>
+        <br><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo hic ad eum dolore tenetur est consequuntur laborum rem voluptates qui odio labore suscipit eius, ea aperiam, dicta beatae aspernatur tempora quos, quia pariatur officia porro. Aperiam iure sed velit enim nemo placeat excepturi, quo doloremque explicabo beatae totam, commodi veritatis!</p>
+    </div>
+    <style>
+        *{margin: 0;padding: 0;}
+        body{
+            width: 100%;
+            overflow-y: hidden;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            /* display: flex; */
+            /* flex-wrap: wrap; */
+        }
+        .Body{
+            width: 100%;
+            height: 100vh;
+            background-color: #333;
+            padding: 1rem;
+            box-sizing: border-box;
+            transition: 500ms all ease-out;
+        }
+        #second{background-color: rgb(66, 65, 65);transition: 500ms all ease-in;}
+    </style>
+    <script>
+        const jumpBtn = document.querySelector("#jump");
+        const prevBtn = document.querySelector("#jump-prev");
+        const first = document.querySelector("#first");
+        const second = document.querySelector("#second");
+        jumpBtn.addEventListener('click', (e)=> {
+            first.style.marginTop = "-100vh";
+        });
+        prevBtn.addEventListener('click', (e)=> {
+            first.style.marginTop = "0";
+        });
+    </script>
+</body>
+</html>
