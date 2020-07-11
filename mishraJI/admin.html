@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/materialize/materialize.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- More Info Dropdown-->
+  <ul id="dropdown-menu" class="dropdown-content">
+    <li><a href="#!"><i class="material-icons">important_devices</i>Courses</a></li>
+    <li><a href="#!"><i class="material-icons">dashboard</i>More Stuff</a></li>
+    <li><a href="#!"><i class="material-icons">contact_mail</i>About Me</a></li>
+  </ul>
+
+  <div class="navbar-fixed">
+    <nav class="teal">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo"><i class="material-icons">face</i>MishraJI</a>
+          <a href="#!" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="../">Home</a></li>
+            <li><a href="#!">Material</a></li>
+
+            <!-- Dropdown Trigger -->
+            <li><a href="" class="dropdown-trigger" data-target="dropdown-menu"><i
+                  class="material-icons right">arrow_drop_down</i>More Info</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <ul class="sidenav" id="mobile-menu">
+    <li>
+      <div class="user-view">
+        <div class="background">
+          <img src="img/back-sidenav.jpg">
+        </div>
+        <a href="#!"><img src="img/user.jpg" alt="" class="circle"></a>
+        <a href="#!"><span class="white-text name">John Doe</span></a>
+        <a href="#!"><span class="white-text email">johndoe@gmail.com</span></a>
+      </div>
+    </li>
+    <li><a href="#!"><i class="material-icons">account_balance</i>Home</a></li>
+    <li><a href="#!"><i class="material-icons">attach_file</i>Material</a></li>
+    <li><a href="#!"><i class="material-icons">important_devices</i>Courses</a></li>
+    <li><a href="#!"><i class="material-icons">dashboard</i>More Stuff</a></li>
+    <li><a href="#!"><i class="material-icons">contact_mail</i>About Me</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+  </ul>
+
+  <!--Main Section-->
+  <div class="container" id="close">
+    <br>
+    <div class="row teal darken-2 white-text"
+      style="transition: 500ms; border: 8px rgb(1, 155, 155) solid; border-radius: 10px;">
+      <i id="" class="material-icons right" style="font-size: 2.5rem; padding: 0.5rem; cursor: pointer;"
+        onclick="closejohn();">close</i>
+      <script>
+        i = document.getElementById("close")
+        function closejohn() {
+          i.style.display = "none";
+        }
+      </script>
+      <div class="row">
+        <div class="container">
+          <h4>Hello <strong>John Doe</strong></h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis assumenda culpa, harum facere porro
+            omnis ipsum sed veritatis perferendis quod quidem nisi a accusantium minus, nemo obcaecati at neque?
+            Expedita?</p>
+          <br>
+          <div class="row">
+            <a href="#!" class="btn waves-effect waves-light">Mail vivekascoder</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 l7 teal white-text ">
+        <div class="row white-text teal darken-2">
+          <div class="col s6 l4">
+            <p style="font-size: 10rem; margin: 0; padding: 0;margin-left: 2rem;"><strong>24</strong></p>
+          </div>
+          <div class="col s6 l8">
+            <br><br>
+            <div class="row" style="margin: 0">
+              <h4>DAYS LEFT</h4>
+            </div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus suscipit, nesciunt rem
+            numquam porro similique illum ea accusamus at quibusdam!dolor nobis!</p>
+          </div>
+        </div>
+        <div class="row" style="padding: 0 2rem ">
+          <h4>What these Days Remind You?</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum enim nostrum, debitis dolor deleniti iusto
+            repudiandae officiis autem ullam error!</p>
+          <ul>
+            <li># Lorem, ipsum dolor.</li>
+            <li># Problems with site.</li>
+          </ul>
+          <h5><strong>Want More Information?</strong></h5>
+          <p><i  style="position: relative; top: 5px; margin: 0; " class="material-icons prefix ">mail</i> vivekascoder@gmail.com</p>
+        </div>
+        <div class="row teal darken-2" style="padding:0; margin-bottom: 0;">
+          <div id="pay" class="col s8 l8">
+            <div class="input-field">
+              <i class="material-icons prefix">payment</i>
+              <input type="text" id="card" class="validate">
+              <label class="white-text" for="card">Enter Credit Card No.</label>
+            </div>
+          </div>
+          <style>
+            #pay .input-field label {
+              color: #fff;
+            }
+            /* label focus color */
+            #pay .input-field input[type=text]:focus + label {
+              color: #fff;
+            }
+            #pay .input-field input{
+              border-bottom: 1px solid #fff;
+            }
+            /* label underline focus color */
+            #pay .input-field input[type=text]:focus {
+              border-bottom: 1px solid #fff;
+              box-shadow: 0 1px 0 0 #fff;
+            }
+            /* valid color */
+            #pay .input-field input[type=text].valid {
+              border-bottom: 1px solid #fff;
+              box-shadow: 0 1px 0 0 #fff;
+            }
+            /* invalid color */
+            #pay .input-field input[type=text].invalid {
+              border-bottom: 1px solid #fff;
+              box-shadow: 0 1px 0 0 #fff;
+            }
+            /* icon prefix focus color */
+            #pay .input-field .prefix .active {
+              color: #fff;
+            }
+          </style>
+          <div class="col s4 l4">
+            <br>
+            <a href="#!" class="btn waves-effect waves-lightr" style="width: 100%;">Recharge Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 l4 offset-l1" >
+        <ul class="collapsible"  style="border:none;">
+          <li class="active">
+            <div class="collapsible-header teal white-text darken-2" style="border:none;"><i class="material-icons">filter_drama</i>First</div>
+            <div class="collapsible-body teal white-text" style="border:none;">
+              <p style="margin:0"><strong>Date: </strong>05-08-19</p>
+              <p style="margin:0"><strong>Time: </strong>05:49 PM</p>
+              <p style="margin:0"><strong>Token: </strong>hds4e$yz_HS4$</p>
+              <p>This to hereby Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, hic eius id repellat totam error, voluptas facilis nihil cum cumque doloribus dolor soluta consequuntur ratione nulla nam asperiores fugit sed!</p>
+              <ul>
+                <li># Lorem, ipsum dolor.</li>
+                <li># Lorem, ipsu</li>
+                <li><strong>@ Paid 589.5 Rupees.</strong></li>
+              </ul>
+              <h5>Success</h5>
+              <a href="#!" class="btn waves-effect waves-light" style="width: 100%;">More Details</a>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header teal white-text darken-2" style="border:none;"><i class="material-icons">place</i>Second</div>
+            <div class="collapsible-body teal white-text" style="border:none;">
+              <p style="margin:0"><strong>Date: </strong>05-08-19</p>
+              <p style="margin:0"><strong>Time: </strong>05:49 PM</p>
+              <p style="margin:0"><strong>Token: </strong>hds4e$yz_HS4$</p>
+              <p>This to hereby Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, hic eius id repellat totam error, voluptas facilis nihil cum cumque doloribus dolor soluta consequuntur ratione nulla nam asperiores fugit sed!</p>
+              <ul>
+                <li># Lorem, ipsum dolor.</li>
+                <li># Lorem, ipsu</li>
+                <li><strong>@ Paid 589.5 Rupees.</strong></li>
+              </ul>
+              <h5>Success</h5>
+              <a href="#!" class="btn waves-effect waves-light" style="width: 100%;">More Details</a>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header teal white-text darken-2" style="border:none;"><i class="material-icons">whatshot</i>Third</div>
+            <div class="collapsible-body teal white-text" style="border:none;">
+              <p style="margin:0"><strong>Date: </strong>05-08-19</p>
+              <p style="margin:0"><strong>Time: </strong>05:49 PM</p>
+              <p style="margin:0"><strong>Token: </strong>hds4e$yz_HS4$</p>
+              <p>This to hereby Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, hic eius id repellat totam error, voluptas facilis nihil cum cumque doloribus dolor soluta consequuntur ratione nulla nam asperiores fugit sed!</p>
+              <ul>
+                <li># Lorem, ipsum dolor.</li>
+                <li># Lorem, ipsu</li>
+                <li><strong>@ Paid 589.5 Rupees.</strong></li>
+              </ul>
+              <h5>Success</h5>
+              <a href="#!" class="btn waves-effect waves-light" style="width: 100%;">More Details</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 l8">
+        <div class="row">
+          <div class="col l5" style="margin-right: 2.5rem;">
+            <div class="row">
+              <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Card Title</span>
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+            </div>
+          </div>
+          <div class="col l5" style="margin-right: 2.5rem;">
+            <div class="row">
+              <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Card Title</span>
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+            </div>
+          </div>
+          <div class="col l5" style="margin-right: 2.5rem;">
+            <div class="row">
+              <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Card Title</span>
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+            </div>
+          </div>
+          <div class="col l5" style="margin-right: 2.5rem;">
+            <div class="row">
+              <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Card Title</span>
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 l4">
+        <div class="row">
+          <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Card Title</span>
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iu
+            sto similique cumque commodi maiores, ut excepturi temporibus ve
+            ritatis eius quas quisquam ex tempora voluptate possimus officiis re
+            prehenderit qulorem6 Lorem ipsum dolor sit amet. i soluta vero? Quam sint ex nisi illo c
+            sto similique cumque commodi maiores, ut excepturi temporibus ve
+            ritatis eius quas quisquam ex tempora voluptate possimus officiis re
+            prehenderit qui soluta vero? Quam sint ex nisi illo c
+            onsequatur repellendus ipsam perferendis est corrupti.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+  <div style="height: 500px; position: static;" class="parallax-window" data-parallax="scroll" data-image-src="img/back-sidenav.jpg">
+    <div class="container">
+      <div class="row" style="padding-top: 7rem;">
+        <form class="col s8 offset-l1 l4 white offset-l8 offset-s2">
+          <div class="row">
+            <div class="col s12 white-text teal darken-2">
+              <h5 class="center">Bulk Email Servise</h5>
+            </div>
+            <div class="input-field col s12">
+              <i class="material-icons prefix teal-text darken-2">account_circle</i>
+              <input id="title" type="text" class="validate ">
+              <label for="title" class="">Title</label>
+            </div>
+            <div class="input-field col s12">
+              <i class="material-icons prefix teal-text darken-2 ">edit</i>
+              <textarea id="msg" class="materialize-textarea"></textarea>
+              <label for="msg" class="">Enter Message</label>
+            </div>
+            <a href="#!" id="subscribe" class="btn waves-effect waves-light col teal darken-2 s6">
+              <i class="material-icons right ">verified_user</i>Login
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+  <div class="">
+    <footer class="page-footer blue-grey darken-4">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 l4 ">
+            <h3>Address</h3>
+            <p style="margin: 0;"><i class="material-icons"
+                style="position: relative; top: 4px; margin: 0; ">account_balance</i> Kapashera, New Delhi</p>
+            <p style="margin: 0;"><i class="material-icons" style="position: relative; top: 4px; margin: 0; ">place</i>
+              House no 818, Near Fun & Food Village</p>
+  
+            <p style="margin: 0;"><i class="material-icons" style="position: relative; top: 4px; margin: 0; ">phone</i>
+              +91 9788452556</p>
+            <p style="margin: 0;"><i class="material-icons" style="position: relative; top: 4px; margin: 0; ">mail</i>
+              johndoe@gmail.com</p>
+          </div>
+          <div class="col s12 l6 offset-l1">
+            <br><br>
+            <div class="col">
+              <h1 class="right" style=""><i style="font-size: 3rem;" class="material-icons">whatshot</i>985<span
+                  style="font-size: 1.5rem;">Visits</span></h1>
+            </div>
+            <div class="col">
+              <h1 class="right" style=""><i style="font-size: 3rem;" class="material-icons">wc</i>145<span
+                  style="font-size: 1.5rem;">Members</span></h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="container">
+            <div class="col s6 l3">
+              <div class="container">
+                <ul>
+                  <li>Instagram</li>
+                  <li>Facebook</li>
+                  <li>Linked In</li>
+                  <li>Email</li>
+                  <li>Services</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col s6 l3">
+              <div class="container">
+                <ul>
+                  <li>Instagram</li>
+                  <li>Facebook</li>
+                  <li>Linked In</li>
+                  <li>Email</li>
+                  <li>Services</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col s6 l3">
+              <div class="container">
+                <ul>
+                  <li>Instagram</li>
+                  <li>Facebook</li>
+                  <li>Linked In</li>
+                  <li>Email</li>
+                  <li>Services</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col s6 l3">
+              <div class="container">
+                <ul>
+                  <li>Instagram</li>
+                  <li>Facebook</li>
+                  <li>Linked In</li>
+                  <li>Email</li>
+                  <li>Services</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright grey darken-4">
+        <div class="container">
+          <p class="center"><strong>Made By <a href="https://www.instagram.com/vivekascoder/" class="white-text"><i
+                  class="material-icons "
+                  style="position: relative; top: 4px;font-size: 1.25rem;">person_pin</i>vivekascoder</a> with <i
+                class="material-icons red-text text-darken-2"
+                style="position: relative; top: 4px;font-size: 1.25rem;">favorite</i> || <i
+                style="position: relative; top: 4px;font-size: 1.25rem;" class="material-icons ">phone</i>
+              9354085897</strong></p>
+  
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- Javascript CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="/materialize/materialize.js"></script>
+  <script src="/parallax.js-1.5.0/parallax.js"></script>
+  </script>
+  <script>
+    $(document).ready(function () {
+      // PARALLAX
+      $('#parallax').parallax();
+    });
+    $(".dropdown-trigger").dropdown({
+      constrainWidth: false,
+      coverTrigger: false
+    });
+    $(".dropdown-trigger-1").dropdown({
+      constrainWidth: true
+    });
+    $(document).ready(() => {
+      $('.slider').slider({
+        interval: 3000,
+        indicators: false,
+      });
+      $('.sidenav').sidenav();
+    });
+    $(document).ready(() => {
+      $('.fixed-action-btn').floatingActionButton();
+      $('.tooltipped').tooltip();
+      $('.modal').modal();
+    });
+    $(document).ready(() => {
+      $('.collapsible').collapsible();
+    });
+    $('.parallax-window').parallax({ imageSrc: 'img/back-sidenav.jpg' });
+  </script>
+</body>
+
+</html>
