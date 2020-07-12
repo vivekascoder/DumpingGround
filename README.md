@@ -31,6 +31,7 @@
 - [React Context](https://gist.github.com/vivekascoder/92031f5a4e144ceac2cbbcd7551347e3)
 - [React App to Show Gist](https://gist.github.com/vivekascoder/4e6d1170747a98f70343ad70f8582905) `react-gist`
 - [React Calculator Temp. Convertor](https://gist.github.com/vivekascoder/8f14701b0b7cf55fb0bce9b9dd2e0be5)
+- [React Click To Focus](https://gist.github.com/vivekascoder/164bc27e641562483d4ebb4da4c0ae91) `React.createRef()`
 
 ## Unconventional Names
 - Luke Smith
