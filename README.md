@@ -17,9 +17,9 @@
 - [New Microsoft Windows Logo](https://drive.google.com/file/d/1a0bWDs_jbBBq0MLKkLghPZtEVBoC6TRu/view?usp=sharing)
 
 ## Some Cool Projects:
-- *LyApp, A lyrics scrapping app.*
+- **LyApp, A lyrics scrapping app.**
   - [LyApp SongsScrapping Project](https://github.com/vivekascoder/LyApp)
-- *Wifi Remote, 2.0*
+- **Wifi Remote, 2.0**
   - [Wifi Remote Web App](https://github.com/vivekascoder/Wifi-Remote-V2)
 ## Some More Links
 - [Sarvjanhit Logo](http://sarvjanhit.org/)
