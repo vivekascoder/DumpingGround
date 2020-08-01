@@ -1,4 +1,4 @@
-## Faced on Kali 20.02
+## Faced on Kali 20.02 and Ubuntu 18.04
 
 
 *The Problems are hardware dependent so you may or may not be able to face them but it's good to know about them.*
