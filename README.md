@@ -26,6 +26,7 @@
 - [BPS Bazar Logo](https://bpsbazar.com/)
 - [LyApp SongsScrapping Project](https://github.com/vivekascoder/LyApp)
 - [Songs Scraping API](sunosangeet.herokuapp.com/)
+- [Linux Ke Nakhre / Issues faced in Linux](https://github.com/vivekascoder/DumpingGround/blob/master/dualboot-issue.md)
 
 ## Unconventional Links
 - [GIthub Emoji Cheat Sheat](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
