@@ -28,6 +28,10 @@
 - [Songs Scraping API](sunosangeet.herokuapp.com/)
 - [Linux Ke Nakhre / Issues faced in Linux](https://github.com/vivekascoder/DumpingGround/blob/master/dualboot-issue.md)
 
+## Templates Links
+- [Materialize Starter Template](https://gist.github.com/vivekascoder/9d46b545dd5d2de82b4d7f07f1d0c174)
+
+
 ## Unconventional Links
 - [GIthub Emoji Cheat Sheat](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
 
