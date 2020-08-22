@@ -51,7 +51,21 @@
 - The Linux Experiment
 - Kevin Powell
 - Varun Mayya
+## Useful Code
+```html
+ <div class="myDIV">Hover over me.</div>
+<div class="hide">I am shown when someone hovers over the div above.</div> 
+```
+```css
+.hide {
+  display: none;
+}
 
+.myDIV:hover + .hide {
+  display: block;
+  color: red;
+}
+```
 <!--
 LuciCoderIlak
 -->
